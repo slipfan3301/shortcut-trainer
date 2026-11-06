@@ -248,7 +248,11 @@
       "statusRu": "подтверждено",
       "statusNote": null,
       "intercepted": {
-        "win": null,
+        "win": {
+          "by": "браузер",
+          "certain": true,
+          "note": "Ctrl+Shift+M — меню профилей в Chrome и Edge, страница его не получает"
+        },
         "mac": null
       },
       "testableByKeypress": true,
