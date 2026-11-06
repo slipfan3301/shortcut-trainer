@@ -1,0 +1,34 @@
+name: Ошибка
+description: Что-то в тренажёре работает не так, как должно
+title: "Ошибка: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что сообщаете! Заявка публичная: не пишите сюда имя, почту и другие личные данные.
+        Скриншот можно вставить в поле «Что случилось» (Ctrl+V).
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что вы делали и что получилось.
+      placeholder: "Нажимаю Ctrl+Enter в отработке — ничего не происходит."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что ожидали
+      placeholder: "Сегмент подтверждается, карточка переходит к следующему сочетанию."
+  - type: input
+    id: where
+    attributes:
+      label: Где
+      placeholder: "редактор, отработка, уровень 2, справка…"
+  - type: textarea
+    id: context
+    attributes:
+      label: Сведения от тренажёра
+      description: Заполняются сами — версия, платформа, браузер, последние нажатия. Можно не трогать.
+      render: text

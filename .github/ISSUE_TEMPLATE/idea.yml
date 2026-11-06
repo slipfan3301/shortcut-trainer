@@ -1,0 +1,21 @@
+name: Идея
+description: Предложить новое задание, режим или улучшение
+title: "Идея: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Заявка публичная — не пишите сюда личные данные.
+  - type: textarea
+    id: what
+    attributes:
+      label: Что предлагаете
+      placeholder: "Добавить задание на Ctrl+K с фильтром по термину."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Сведения от тренажёра
+      description: Заполняются сами. Можно не трогать.
+      render: text
